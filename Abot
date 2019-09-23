@@ -1,0 +1,26 @@
+#include <Servo.h>     
+Servo sl;                     
+Servo sr;
+void setup()            
+{
+  int i;
+  pinMode(4, OUTPUT);
+  sl.attach(13); sr.attach(12);
+
+  while(1){
+  sl.write(1300); sr.write(1700); 
+  for(i = 0; i < 5; i++){
+  digitalWrite(4, HIGH);  tone(7, 659, 300);
+  delay(400);
+  digitalWrite(4, LOW);   tone(7, 523, 300);
+  delay(400);
+  }
+  sl.write(1500); sr.write(1500);
+  delay(500);
+  sr.write(1700);
+  delay(700);
+  }
+}  
+void loop()               
+{                    
+ } 
