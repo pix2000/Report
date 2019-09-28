@@ -1,0 +1,110 @@
+1.
+C언어는 구조화된 언어이다 - 특징
+호환성이 좋아 어떤 시스템에서도 사용할 수 있다 - 장점1
+메모리의 사용량을 줄일 수 있고 속도를 저하시키는 요소를 최소화할 수 있다 - 장점2
+2.
+운영체제 및 필수 시스템 개발
+3.
+#include <stdio.h>
+int main(){
+int a,b,c;
+a=3, b=2;
+c=a+b;
+printf("%d\n",c);
+}
+4.
+#include <stdio.h>
+int daa(int a, int b){
+return(a+b);
+}
+int main(){
+int a,b,c;
+puts("두 값을 넣으시오");
+  scanf("%d%d", &a,&b);
+  c=add(a,b);
+  printf("%d\n", c);
+  5.
+  #include<stdio.h>
+  int add(int a, int b){
+    return(a+b);
+    int main(){
+    int a,b;
+    int sum;
+    a=3, b=2;
+    sum- add(a,b);
+    printf("%d\n",sum);
+    }
+    }
+    6.
+    #include <stdio.h>
+    #include <stdlib.h>
+    int add(int a,int b){
+    return(a+b);
+    }
+    int main(){
+    int a,b;
+    FILE*fp=fopen("my.txt","r");
+    if (fp==NULL){
+    puts("FILE NOT FOUND");
+    exit(0);
+    }
+    fscanf(fp,"%d%d",&a,&b);
+    fclose(fp);
+    printf("%d\n",add(a,b));
+    }
+    7.
+    #include <stdio.h>
+    int main(){
+    char c1[7]="Banana";
+    char c2[7]="Ornage";
+    char c3[5]="Kiwi";
+    printf("%s\n%s\n%s\n"c1,c2,c3);
+    }
+    8.
+    #include <stdio.h>
+    #include <stdlib.h>
+    int main(int a,char*v[]){
+    int a,b,c;
+    if(n<2){
+    printf("매개변수가 모자라요.\n");
+    exit(0);
+    }
+    a=atoi(v[1]);
+    b=atoi(v[3]);
+    switch(v[2]v[0]){
+      case'*' : c = a*b; break;
+    defalt : break;
+    }
+    printf("%d\n",c);
+    }
+    9.
+    #include<stdio.h>
+    struct user{
+    int a;
+    char n[20];
+    char m[40];
+    }
+    int main(){
+    struct user she = {18,"Jenny",,"Jenny@naver.com};
+    struct user he = {19,"Jack",,"Jack@naver.com};
+    printf("%d%s%s\n", she.a, she.n, she.m);
+    printf("%d%s%s\n", he.a, he.n, he.m);
+    }
+    10.
+    #include <stdio.h>
+
+struct user {
+   int a;
+   char n[20];
+   char n[40];
+}
+  we[2] = { {18, "Jenny", "Jenny@naver.com"}, {19, "Jack","Jack@naver.com"} };
+  int main() {
+   struct user* pr;
+   pr = we;
+   printf("%d %s\n", pr->a, pr->n, pr->m);
+   pr++;
+   printf("%d %s\n", pr->a, pr->n, pr->m);
+   
+}
+    
