@@ -1,6 +1,6 @@
-1주차 과제 펜 만들기
+#1주차 과제 펜 만들기
 
- void setup(){
+ "void setup(){
   size(500,500);
   stroke(0,0,255); //RGB
   strokeWeight(16); // 크기 16 
@@ -8,9 +8,9 @@
 void draw(){
   if(mousePressed) // 마우스를 누를 시 작동
       line(pmouseX,pmouseY,mouseX,mouseY);  
-}
+}"
 
-2주차 과제 베너 만들기
+#2주차 과제 베너 만들기
 
 void setup(){
 
@@ -29,7 +29,7 @@ void keyPressed(){
 sp = key-'0';
 }
 
-3주차 과제 Examples 중에 하나를 선택해서 수정하기
+#3주차 과제 Examples 중에 하나를 선택해서 수정하기
 
 float x;
 float y;
@@ -47,7 +47,7 @@ void draw() {
   ellipse(x, y, 30, 30);
 }
 
-4주차 과제 나의 도형 만들기
+#4주차 과제 나의 도형 만들기
 
 int a = 150;
 
@@ -113,7 +113,7 @@ point(210,300);
 point(10,320);
 point(320,350);
 
- 5주차 과제 OpenGL PGraphics, PShape
+#5주차 과제 OpenGL PGraphics, PShape
  
  PGraphics pg;
 void setup() {
